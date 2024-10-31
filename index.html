@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="calculator-app">
+            <h1>Calculator Application</h1>
+        
+            <div class="container">
+                <input type="text" id="display" readonly>
+                <div class="buttons">
+                    <button onclick="clearDisplay()" class="operator">C</button>
+                    <button onclick="appendToDisplay('(')" class="operator">&#10090</button>
+                    <button onclick="appendToDisplay(')')" class="operator">&#10091</button>
+                    <button onclick="appendToDisplay('+')" class="operator">&plus;</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('-')" class="operator">&minus;</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('/')" class="operator">&divide;</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('*')" class="operator">&times;</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="backspace()">DEL</button>
+                    <button onclick="reversePolish()" class="calculate">=</button>
+                </div>
+            </div>
+            <p>Powered by Miguel Sadorra</p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
